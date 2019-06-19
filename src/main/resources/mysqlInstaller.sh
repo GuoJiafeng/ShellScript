@@ -50,11 +50,17 @@ read -p "请输入ENTER继续"
 
 mysql -uroot -e "use mysql;"
 
+#mysql -uroot -e "use mysql;"
+
+mysql -f mysql -e "UPDATE user SET Password=PASSWORD('${mysqlpass01}') where USER='root'"
+
+mysql  -e "flush privileges;"
+
 echo "默认开启远程连接权限"
 
 # mysql -f mysql -e "delete from user where password='';"
 
-mysql -f mysql -e "grant all privileges on *.* to 'root'@'%' identified by '${mysqlpass01}' with grant option;"
+#mysql -f mysql -e "grant all privileges on *.* to 'root'@'%' identified by '${mysqlpass01}' with grant option;"
 
 mysql  -e "flush privileges;"
 
