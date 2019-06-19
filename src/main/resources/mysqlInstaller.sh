@@ -52,7 +52,7 @@ mysql -uroot -e "use mysql;"
 
 echo "默认开启远程连接权限"
 
-mysql -f mysql -e "delete from user where password='';"
+# mysql -f mysql -e "delete from user where password='';"
 
 mysql -f mysql -e "grant all privileges on *.* to 'root'@'%' identified by '${mysqlpass01}' with grant option;"
 
