@@ -60,9 +60,9 @@ service mysql restart
 
 # mysql -f mysql -e "delete from user where password='';"
 
-#mysql -f mysql -e "grant all privileges on *.* to 'root'@'%' identified by '${mysqlpass01}' with grant option;"
+mysql -uroot -p${mysqlpass01}  -f mysql -e "grant all privileges on *.* to 'root'@'%' identified by ${mysqlpass01} with grant option;"
 
-#mysql  -e "flush privileges;"
+mysql -uroot -p${mysqlpass01} -e "flush privileges;"
 
 sleep 1
 
@@ -71,5 +71,3 @@ echo "重启Mysql"
 service mysql restart
 
 
-/usr/bin/mysqladmin -u root password 'new-password'
-/usr/bin/mysqladmin -u root -h GuoJiafeng01 password 'new-password'
