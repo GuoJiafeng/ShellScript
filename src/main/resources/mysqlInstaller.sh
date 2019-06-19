@@ -84,7 +84,7 @@ service mysql restart
 
 echo "结束mysqld_safe进程"
 
-mysqld_safepid = $( ps | grep mysqld_safe  |  awk '{print $1}')
+mysqld_safepid=$( ps | grep mysqld_safe  |  awk '{print $1}')
 
 kill -9 $mysqld_safepid
 
