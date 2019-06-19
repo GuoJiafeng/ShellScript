@@ -13,15 +13,22 @@ yum remove -y mysql*
 
 rm -rf MySQL-*
 
+service mysql stop
+
+rm -rf /var/lib/mysql/*
+
+
 rpm -e --nodeps MySQL-client-5.5.62-1.el6.x86_64
 
 rpm -e --nodeps MySQL-server-5.5.62-1.el6.x86_64
 
 echo "开始安装Mysql 客户端"
+sleep 1
 
 rpm -ivh /root/app/MySQL-client-5.5.62-1.el6.x86_64.rpm
 
 echo "开始安装Mysql 服务端"
+sleep 1
 
 rpm -ivh /root/app/MySQL-server-5.5.62-1.el6.x86_64.rpm
 
@@ -47,6 +54,7 @@ mysql -f mysql -e "grant all privileges on *.* to 'root'@'%' identified by '${my
 
 mysql  -e "flush privileges;"
 
+sleep 1
 
 echo "重启Mysql"
 
