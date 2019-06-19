@@ -38,7 +38,6 @@ rpm -ivh /root/app/MySQL-server-5.5.62-1.el6.x86_64.rpm
 
 
 
-
 nohup mysqld_safe --skip-grant-table &
 
 sleep 1
