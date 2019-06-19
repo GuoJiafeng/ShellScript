@@ -42,7 +42,7 @@ echo "确认已经关闭mysqld_safe进程"
 
 mysqld_safepid = $( ps | grep mysqld_safe  |  awk '{print $1}')
 
-kill -9 $mysqld_safepid
+kill -9  ${mysqld_safepid}
 
 echo "启动mysqld_safe进程"
 nohup mysqld_safe --skip-grant-table &
