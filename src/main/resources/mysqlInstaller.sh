@@ -48,7 +48,7 @@ read -p "请输入您想要修改的密码："  mysqlpass01
 
 read -p "请输入ENTER继续"
 
-mysql -uroot -e "use mysql;"
+#mysql -uroot -e "use mysql;"
 
 #mysql -uroot -e "use mysql;"
 
