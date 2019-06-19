@@ -15,7 +15,11 @@ rm -rf MySQL-*
 
 service mysql stop
 
-rm -rf /var/lib/mysql/*
+
+rm -rf /var/lock/subsys/mysql
+rm -rf /var/lib/mysql
+rm -rf /var/lib/mysql/mysql
+rm -rf /usr/lib64/mysql
 
 
 rpm -e --nodeps MySQL-client-5.5.62-1.el6.x86_64
