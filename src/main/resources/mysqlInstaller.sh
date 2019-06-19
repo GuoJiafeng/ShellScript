@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 echo "安装Mysql"
 echo " --------------------"
 echo "| author：GuoJiafeng |"
@@ -12,13 +13,13 @@ yum remove -y mysql*
 
 rm -rf MySQL-*
 
-rpm -e --nodeps MySQL-client-5.5.61-1.el6.x86_64
+rpm -e --nodeps MySQL-client-5.5.62-1.el6.x86_64
 
-rpm -e --nodeps MySQL-server-5.5.61-1.el6.x86_64
+rpm -e --nodeps MySQL-server-5.5.62-1.el6.x86_64
 
 
-rpm -ivh MySQL-client-5.5.61-1.el6.x86_64.rpm
-rpm -ivh MySQL-server-5.5.61-1.el6.x86_64.rpm
+rpm -ivh /root/app/MySQL-client-5.5.62-1.el6.x86_64.rpm
+rpm -ivh /root/app/MySQL-server-5.5.62-1.el6.x86_64.rpm
 
 
 nohup mysqld_safe --skip-grant-table &
