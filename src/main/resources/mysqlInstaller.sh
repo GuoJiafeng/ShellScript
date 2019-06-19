@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
+
 echo "安装Mysql"
-echo " --------------------"
+echo " ————————————————————"
 echo "| author：GuoJiafeng |"
 echo "| company：Baizhi    |"
-echo " --------------------"
+echo " ————————————————————"
 
 # wget -c http://mirrors.linuxeye.com/oneinstack-full.tar.gz && tar xzf oneinstack-full.tar.gz && ./oneinstack/install.sh --db_option 2 --dbinstallmethod 1 --dbrootpwd baizhi --reboot
 echo "卸载原有Mysql"
@@ -13,9 +14,10 @@ yum remove -y mysql*
 
 rm -rf MySQL-*
 
+echo "停止Mysql服务"
 service mysql stop
 
-
+echo "删除相关文件"
 rm -rf /var/lock/subsys/mysql
 rm -rf /var/lib/mysql
 rm -rf /var/lib/mysql/mysql
