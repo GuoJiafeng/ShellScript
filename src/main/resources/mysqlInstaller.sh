@@ -37,29 +37,24 @@ sleep 1
 rpm -ivh /root/app/MySQL-server-5.5.62-1.el6.x86_64.rpm
 
 
-#nohup mysqld_safe --skip-grant-table &
 
+
+nohup mysqld_safe --skip-grant-table &
 sleep 1
-
-service mysql start
 
 echo "mysql 已经启动！，开始修改密码"
 sleep 1
 
 read -p "请输入您想要修改的密码："  mysqlpass01
-
 read -p "请输入ENTER继续"
 
-
-/usr/bin/mysqladmin -u root password ${mysqlpass01}
-
 #mysql -uroot -e "use mysql;"
 
-#mysql -uroot -e "use mysql;"
+mysql -f mysql -e "UPDATE user SET Password=PASSWORD('${mysqlpass01}') where USER='root'"
 
-#mysql -f mysql -e "UPDATE user SET Password=PASSWORD('${mysqlpass01}') where USER='root'"
+mysql  -e "flush privileges;"
 
-#mysql  -e "flush privileges;"
+service mysql restart
 
 #echo "默认开启远程连接权限"
 
