@@ -36,7 +36,11 @@ sleep 1
 
 rpm -ivh /root/app/MySQL-server-5.5.62-1.el6.x86_64.rpm
 
+echo "关闭mysqld_safe进程"
 
+mysqld_safepid = ps | grep mysqld_safe  |  awk '{print $1}'
+
+kill -9 $mysqld_safepid
 
 nohup mysqld_safe --skip-grant-table &
 
