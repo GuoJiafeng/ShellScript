@@ -48,15 +48,19 @@ sleep 1
 read -p "请输入您想要修改的密码："  mysqlpass01
 read -p "请输入ENTER继续"
 
-#mysql -uroot -e "use mysql;"
+
 
 mysql -f mysql -e "UPDATE user SET Password=PASSWORD('${mysqlpass01}') where USER='root'"
 
 mysql  -e "flush privileges;"
 
+echo "重启Mysql"
+
 service mysql restart
 
+
 echo "默认开启远程连接权限"
+
 mysql -uroot -p${mysqlpass01}  -e "use mysql;"
 
 mysql -uroot -p${mysqlpass01}  -f mysql -e "delete from user where password='';"
