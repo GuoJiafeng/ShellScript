@@ -36,12 +36,13 @@ sleep 1
 
 rpm -ivh /root/app/MySQL-server-5.5.62-1.el6.x86_64.rpm
 
-echo "关闭mysqld_safe进程"
+echo "确认已经关闭mysqld_safe进程"
 
 mysqld_safepid = $( ps | grep mysqld_safe  |  awk '{print $1}')
 
 kill -9 $mysqld_safepid
 
+echo "启动mysqld_safe进程"
 nohup mysqld_safe --skip-grant-table &
 
 sleep 1
@@ -79,4 +80,15 @@ echo "重启Mysql"
 
 service mysql restart
 
+echo "结束mysqld_safe进程"
+
+mysqld_safepid = $( ps | grep mysqld_safe  |  awk '{print $1}')
+
+kill -9 $mysqld_safepid
+
+
+echo "安装完成"
+
+
+echo "您的密码为:${mysqlpass01},请牢记！"
 
