@@ -56,11 +56,12 @@ mysql  -e "flush privileges;"
 
 service mysql restart
 
-#echo "默认开启远程连接权限"
+echo "默认开启远程连接权限"
+mysql -uroot -p${mysqlpass01}  -e "use mysql;"
 
-# mysql -f mysql -e "delete from user where password='';"
+mysql -uroot -p${mysqlpass01}  -f mysql -e "delete from user where password='';"
 
-mysql -uroot -p${mysqlpass01}  -f mysql -e "grant all privileges on *.* to 'root'@'%' identified by ${mysqlpass01} with grant option;"
+mysql -uroot -p${mysqlpass01}  -f mysql -e "grant all privileges on *.* to 'root'@'%' identified by '${mysqlpass01}' with grant option;"
 
 mysql -uroot -p${mysqlpass01} -e "flush privileges;"
 
