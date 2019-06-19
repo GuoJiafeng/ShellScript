@@ -41,6 +41,8 @@ rpm -ivh /root/app/MySQL-server-5.5.62-1.el6.x86_64.rpm
 
 sleep 1
 
+service mysql start
+
 echo "mysql 已经启动！，开始修改密码"
 sleep 1
 
