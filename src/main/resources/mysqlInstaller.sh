@@ -22,6 +22,10 @@ rm -rf /var/lock/subsys/mysql
 rm -rf /var/lib/mysql
 rm -rf /var/lib/mysql/mysql
 rm -rf /usr/lib64/mysql
+rm -rf /usr/bin/mysql
+rm -rf  /usr/share/mysql
+rm -rf /etc/rc.d/init.d/mysql
+rm -rf /etc/logrotate.d/mysql
 
 
 rpm -e --nodeps MySQL-client-5.5.62-1.el6.x86_64
