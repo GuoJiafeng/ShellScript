@@ -14,6 +14,7 @@ yum remove -y mysql*
 
 
 echo "停止Mysql服务"
+
 service mysql stop
 
 rpm -e --nodeps MySQL-client-5.5.62-1.el6.x86_64
