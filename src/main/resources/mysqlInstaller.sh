@@ -16,6 +16,10 @@ yum remove -y mysql*
 echo "停止Mysql服务"
 service mysql stop
 
+rpm -e --nodeps MySQL-client-5.5.62-1.el6.x86_64
+
+rpm -e --nodeps MySQL-server-5.5.62-1.el6.x86_64
+
 echo "删除相关文件"
 rm -rf /var/lock/subsys/mysql
 rm -rf /var/lib/mysql
@@ -27,9 +31,6 @@ rm -rf /etc/rc.d/init.d/mysql
 rm -rf /etc/logrotate.d/mysql
 
 
-rpm -e --nodeps MySQL-client-5.5.62-1.el6.x86_64
-
-rpm -e --nodeps MySQL-server-5.5.62-1.el6.x86_64
 
 echo "开始安装Mysql 客户端"
 sleep 1
