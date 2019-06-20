@@ -12,7 +12,6 @@ sleep 1
 
 yum remove -y mysql*
 
-rm -rf MySQL-*
 
 echo "停止Mysql服务"
 service mysql stop
