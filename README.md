@@ -41,7 +41,7 @@ rpm -e --nodeps MySQL-server-5.5.62-1.el6.x86_64
 
 
 ~~~
- bash <(curl -s -k -L https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/tomcatInstaller.sh)
+ bash <(curl -s -k -L https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/mavenInstaller.sh)
 ~~~
 
 
