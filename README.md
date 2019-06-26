@@ -33,3 +33,15 @@ rpm -e --nodeps MySQL-server-5.5.62-1.el6.x86_64
  bash <(curl -s -k -L https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/tomcatInstaller.sh)
 ~~~
 
+
+
+
+### Maven一键安装
+> 版本为  配置root用户环境变量
+
+
+~~~
+ bash <(curl -s -k -L https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/tomcatInstaller.sh)
+~~~
+
+
