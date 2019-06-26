@@ -30,6 +30,8 @@ echo "请注意：环境变量配置为root用户的环境变量"
 
 echo "export JAVA_HOME=/home/java/jdk1.8.0_181/" >> /root/.bashrc
 
+source /root/.bashrc
+
 echo "export PATH=$PATH:$JAVA_HOME/bin" >> /root/.bashrc
 
 source /root/.bashrc
