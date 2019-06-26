@@ -34,16 +34,25 @@ sleep 3
 
 echo "开始配置Maven"
 
+
 echo "创建本地仓库 /home/maven/local"
 
 mkdir /home/maven/local
 
 echo "配置阿里云镜像源"
 
+
 rm -rf $MAVEN_HOME/conf/settings.xml
 
 
-cp settings.xml   $MAVEN_HOME/conf/
+echo "下载settings.xml配置文件"
 
+wget https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/maven/settings.xml
+
+sleep 3
+
+echo "下载完成"
+
+cp settings.xml   $MAVEN_HOME/conf/
 
 echo "Maven相关配置完成"
