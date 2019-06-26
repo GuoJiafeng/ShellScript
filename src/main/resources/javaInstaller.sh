@@ -36,6 +36,7 @@ echo "export PATH=$PATH:$JAVA_HOME/bin" >> /root/.bashrc
 
 source /root/.bashrc
 
+sleep 3
 echo "配置完成"
 
 
