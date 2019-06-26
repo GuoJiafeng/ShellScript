@@ -22,3 +22,14 @@ rpm -e --nodeps MySQL-client-5.5.62-1.el6.x86_64
 rpm -e --nodeps MySQL-server-5.5.62-1.el6.x86_64
 ~~~
 
+
+
+
+### Tomcat一键安装
+> 版本为8.5  配置root用户环境变量
+
+
+~~~
+ bash <(curl -s -k -L https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/tomcatInstaller.sh)
+~~~
+
