@@ -1,8 +1,5 @@
 
 
-[一键安装相关脚本](http://www.cnblogs.com/sxdcgaq8080/p/7894828.html)
-
-
 ### Java一键安装
 > 版本为1.8 配置root用户环境变量
 
