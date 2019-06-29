@@ -5,7 +5,7 @@
 
 
 ~~~
- bash <(curl -s -k -L https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/javaInstaller.sh)
+ bash <(curl -s -k -L https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/onekeyInstall/javaInstaller.sh)
 ~~~
 
 
@@ -13,7 +13,7 @@
 ### MySQL一键安装
 > 说明：版本为5.5 默认开启远程权限。
 ~~~
- bash <(curl -s -k -L https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/mysqlInstaller.sh)
+ bash <(curl -s -k -L https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/onekeyInstall/mysqlInstaller.sh)
 ~~~
 > 卸载脚本
 ~~~
@@ -30,7 +30,7 @@ rpm -e --nodeps MySQL-server-5.5.62-1.el6.x86_64
 
 
 ~~~
- bash <(curl -s -k -L https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/tomcatInstaller.sh)
+ bash <(curl -s -k -L https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/onekeyInstall/tomcatInstaller.sh)
 ~~~
 
 
@@ -41,7 +41,7 @@ rpm -e --nodeps MySQL-server-5.5.62-1.el6.x86_64
 
 
 ~~~
- bash <(curl -s -k -L https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/mavenInstaller.sh)
+ bash <(curl -s -k -L https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/onekeyInstall/mavenInstaller.sh)
 ~~~
 
 

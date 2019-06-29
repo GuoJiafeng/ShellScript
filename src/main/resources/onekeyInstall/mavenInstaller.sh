@@ -47,7 +47,7 @@ rm -rf $MAVEN_HOME/conf/settings.xml
 
 echo "下载settings.xml配置文件"
 
-wget https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/maven/settings.xml
+wget https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/onekeyInstall/maven/settings.xml
 
 sleep 3
 
