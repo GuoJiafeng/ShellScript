@@ -1,6 +1,8 @@
 
 
-[一键安装相关脚本](http://www.cnblogs.com/sxdcgaq8080/p/7894828.html)
+[一键安装相关脚本](https://github.com/GuoJiafeng/ShellScript/blob/master/src/main/resources/onekeyInstall/onekeyInstall.md)
+
+[Hive 启动相关脚本]()
 
 
 ### Java一键安装
