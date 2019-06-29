@@ -8,5 +8,5 @@
 
 > 通过下载到本地启动
 ~~~
- wget https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/hive/starthiveadmin.sh  && ss starthiveadmin.sh
+ wget https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/hive/starthiveadmin.sh  && sh starthiveadmin.sh
 ~~~
