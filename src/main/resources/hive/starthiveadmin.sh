@@ -5,7 +5,7 @@ echo "| author：GuoJiafeng |"
 echo "| company：Baizhi    |"
 echo " ————————————————————"
 
-slee 1
+sleep 1
 
 echo "打印命令"
 
