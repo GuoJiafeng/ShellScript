@@ -7,3 +7,8 @@
 > 启动Hive 管理员模式  后台模式  启动Beeline 等
 
 
+### [Zookeeper 启动相关脚本](https://github.com/GuoJiafeng/ShellScript/blob/master/src/main/resources/zookeeper/startzookeeper.md)
+> 启动Zookeeper
+
+### [Kafka 启动相关脚本](https://github.com/GuoJiafeng/ShellScript/blob/master/src/main/resources/kafka/startkafka.md)
+> 启动Kafka 
