@@ -9,6 +9,7 @@ sleep 1
 
 echo "打印命令"
 
+
 echo "/home/kafka/kafka_2.11-0.11.0.0/bin/kafka-server-start.sh   -daemon  /home/kafka/kafka_2.11-0.11.0.0/config/server.properties"
 
 
