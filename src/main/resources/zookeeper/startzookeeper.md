@@ -8,5 +8,5 @@
 
 > 通过下载到本地启动
 ~~~
- wget https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/zookeeper/startzookeeperdefault.sh && sh startzookeeperdefault.sh
+ wget --no-check-certificate https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/zookeeper/startzookeeperdefault.sh && sh startzookeeperdefault.sh
 ~~~
