@@ -8,7 +8,7 @@
 
 > 通过下载到本地启动
 ~~~
- wget https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/hive/starthiveadmin.sh  && sh starthiveadmin.sh
+ wget  --no-check-certificate https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/hive/starthiveadmin.sh  && sh starthiveadmin.sh
 ~~~
 
 
@@ -20,7 +20,7 @@
 
 > 通过下载到本地启动
 ~~~
- wget https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/hive/starthivedemon.sh  && sh starthivedemon.sh
+ wget --no-check-certificate  https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/hive/starthivedemon.sh  && sh starthivedemon.sh
 ~~~
 
 
@@ -33,5 +33,5 @@
 
 > 通过下载到本地启动
 ~~~
- wget https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/hive/starthivebeeline.sh  && sh starthivebeeline.sh
+ wget --no-check-certificate  https://raw.githubusercontent.com/GuoJiafeng/ShellScript/master/src/main/resources/hive/starthivebeeline.sh  && sh starthivebeeline.sh
 ~~~
