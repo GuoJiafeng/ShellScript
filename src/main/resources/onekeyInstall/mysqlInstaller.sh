@@ -39,6 +39,9 @@ rm -rf /usr/share/mysql/*
 echo "开始安装Mysql 客户端"
 sleep 1
 
+echo "安装依赖环境 perl"
+yum install perl
+
 rpm -ivh /root/app/MySQL-client-5.5.62-1.el6.x86_64.rpm
 
 echo "开始安装Mysql 服务端"
