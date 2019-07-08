@@ -17,7 +17,7 @@ tar -zxvf /root/app/apache-maven-3.3.9-bin.tar.gz -C /home/maven
 echo "开始配置环境变量"
 
 
-echo "export MAVEN_HOME=/home/maven/apache-maven-3.3.9/" >> /root/.bashrc
+echo "export MAVEN_HOME=/home/maven/apache-maven-3.3.9" >> /root/.bashrc
 
 source /root/.bashrc
 
