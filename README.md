@@ -12,3 +12,4 @@
 
 ### [Kafka 启动相关脚本](https://github.com/GuoJiafeng/ShellScript/blob/master/src/main/resources/kafka/startkafka.md)
 > 启动Kafka 
+### [工具脚本](https://github.com/GuoJiafeng/ShellScript/blob/master/src/main/resources/tools/tools.md)
